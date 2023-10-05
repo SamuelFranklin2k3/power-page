@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Data Dashboard</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Power Data Dashboard</h1>
+        
+        <!-- Chart Container -->
+        <div class="chart-container">
+            <canvas id="lineChart" width="400" height="250"></canvas>
+        </div>
+        
+        <!-- Power Boxes -->
+        <div class="power-box">
+            <h2>Daily Power</h2>
+            <p>12345 kWh</p>
+        </div>
+        
+        <div class="power-box">
+            <h2>Weekly Power</h2>
+            <p>67890 kWh</p>
+        </div>
+        
+        <div class="power-box current-power">
+            <h2>Current Power</h2>
+            <p id="currentPowerValue">Loading...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
